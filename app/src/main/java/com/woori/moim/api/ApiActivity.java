@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.woori.moim.R;
@@ -19,6 +20,8 @@ public class ApiActivity extends BaseActivity implements MainActivityView {
     TextView textView;
     Button button1;
     Button button2;
+    ImageView imageView;
+    int i=1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +45,17 @@ public class ApiActivity extends BaseActivity implements MainActivityView {
                 finish();
             }
         });
-
+        imageView = findViewById(R.id.api_iv_check);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                i *= -1;
+                if (i == 1)
+                    imageView.setImageResource(R.drawable.check);
+                else
+                    imageView.setImageResource(R.drawable.non_check);
+            }
+        });
         getData();
     }
 

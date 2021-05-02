@@ -87,6 +87,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="통신사"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
     <EditText
         android:id="@+id/editTextTextPersonName"
         android:layout_width="wrap_content"
@@ -96,6 +110,8 @@
         android:background="@drawable/border"
         android:ems="10"
         android:hint="홍길동"
+        android:textColor="@color/black"
+        android:textColorHint="#888888"
         android:inputType="textPersonName"
         android:paddingLeft="10dp"
         android:textSize="15dp"
@@ -113,6 +129,8 @@
         android:background="@drawable/border"
         android:ems="10"
         android:hint="000000"
+        android:textColor="@color/black"
+        android:textColorHint="#888888"
         android:inputType="number"
         android:paddingLeft="10dp"
         android:textSize="15dp"
@@ -131,6 +149,8 @@
         android:ems="10"
         android:inputType="numberPassword"
         android:hint="0000000"
+        android:textColor="@color/black"
+        android:textColorHint="#888888"
         android:paddingLeft="10dp"
         android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -149,23 +169,80 @@
         android:inputType="number"
         android:paddingLeft="10dp"
         android:textSize="15dp"
+        android:textColor="@color/black"
         android:hint="000-0000-0000"
+        android:textColorHint="#888888"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1"
         app:layout_constraintStart_toEndOf="@+id/textView5"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
 
-    <Button
-        android:id="@+id/api_btn_cert"
+    <EditText
+        android:id="@+id/editTextNumber4"
         android:layout_width="wrap_content"
-        android:layout_height="35dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:textSize="15dp"
+        android:text="SKT"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber3" />
+
+    <FrameLayout
+        android:id="@+id/api_iv_agree"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
         android:layout_marginTop="20dp"
-        android:text="휴대폰 인증"
         android:textColor="@color/white"
-        android:background="@drawable/cert_background"
+        android:background="@drawable/box_agree"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber3" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber4">
+
+        <ImageView
+            android:id="@+id/api_iv_bogi"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center|end"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/box_agree3"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/api_iv_agree" />
+
+        <ImageView
+            android:id="@+id/api_iv_check"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center|end"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/non_check"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/api_iv_agree" />
+
+    </FrameLayout>
+
+
+    <Button
+        android:id="@+id/api_btn_cert"
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/cell_cert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/api_iv_agree" />
 
     <Button
         android:id="@+id/api_btn_next"

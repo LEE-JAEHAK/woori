@@ -20,7 +20,7 @@ public class SendSuccessActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), SendSuccessActivity.class);
+                Intent intent = new Intent(getApplicationContext(), RecommendActivity.class);
                 startActivity(intent);
                 finish();
             }

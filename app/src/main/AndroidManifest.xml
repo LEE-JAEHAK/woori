@@ -11,8 +11,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Woori">
-        <activity android:name=".SendSuccessActivity"></activity>
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".RecommendActivity"></activity>
+        <activity android:name=".SendSuccessActivity" />
         <activity android:name=".PasswordActivity" />
         <activity android:name=".SendActivity" />
         <activity android:name=".api.ApiActivity">

@@ -30,7 +30,7 @@ public class AccntActivity extends BaseActivity implements MainActivityView {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showCustomToast("인증되었습니다");
+                showCustomToast("인증되었습니다\n계좌번호 : 10026288*****");
             }
         });
 
